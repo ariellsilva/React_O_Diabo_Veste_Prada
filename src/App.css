@@ -87,6 +87,10 @@ nav a{
     color: white;
     
 }
+
+.sessao-sobre h2, .sinopse-texto h2{
+  color: #0c0c0c;
+}
   .titulo h1 {
   font-size: 2.9rem;
   color: var(--dark-gray);
