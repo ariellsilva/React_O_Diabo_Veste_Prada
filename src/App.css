@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:wght@300;400;700&display=swap');
+body{
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+  --champagne: #f7f3f0;
+  --gold: #c5a47e;
+  --dark-gray: #1a1a1a;
+}
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+  }
+  h1, h2, h3, h4 {
+  font-family: 'Bodoni Moda', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.imagem{
+    background-image: url('https://s2-gshow.glbimg.com/3t8AXK5CZOfZZitj1CiRo2r9hrs=/0x0:1440x1802/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2026/2/U/WKKg3TSUWWjfoEFuU5TA/omelete-2026-03-12t131724.000z.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  width: 400px;         
+  height: 500px;
+  }
+.abrir a{
+   text-decoration: none;
+   color: white;
+}
+.titulo-projeto{
+ display: flex;
+ align-items: center;
+ top: 0;
+ position: fixed;
+ width: 71%;
+ height: 60px;
+ z-index: 999;
+}
+.nome-projeto{
+  font-size: 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+nav {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 300px; 
+  left: -300px;
+  z-index: 100; 
+  background-color: black;
+
+  transition: transform 0.5s;
+}
+.titulo-projeto:hover ~ .menu nav, 
+.menu:hover nav{
+    transform: translateX(300px);
+}
+.sobre-imagem img{
+  width: 550px;
+  height: 350px;
+  padding: 40px;
+}
+nav a{
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  padding: 12px 10px 12px 32px;
+}
+.cabeca{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    line-height: 50px;
+}
+.titulo-projeto{
+    background-color: black;
+    display: flex;
+    color: white;
+    
+}
+  .titulo h1 {
+  font-size: 2.9rem;
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+#saber {
+  background-color: var(--gold); 
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(224, 189, 189, 0.897);
+}
+.botao-saiba-mais button:hover{
+  letter-spacing: 4px;
+}
+.menu a{
+  text-decoration: none;
+  gap: 15px;
+  display: flex;
+  color: white;
+}
+.menu{
+  padding: 10px;
+}
+main{
+  padding: 10px;
+  transition: margin-left 0.5s;
+}
+.card-acessorios{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+section{
+  padding: 80px 80px;
+}
+.personagens-titulo-mc{
+padding: 30px;
+
+}
+.card-personagens{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+}
+.card-personagens > div{
+ width: calc(50% - 10px);
+}
+.card-personagens-masculino{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.card-acessorios img{
+  width: 200px;
+  height: 200px;
+}
+.card-personagens img{
+  width: 200px;
+  height: 270px;
+}
+.card-personagens-masculino img{
+  width: 200px;
+  height: 270px;
+}
+.card-personagens-masculino > div{
+  width: calc(50% - 10px);
+  gap: 10px;
+}
+.stanley, .simon, .adrian, .daniel{
+  text-align: center;
+  width: 200px;
+  justify-content: center;
+  justify-items: center;
+}
+.andy, .miranda, .emily, .serena, .bolsa, .oculos, .colar{
+text-align: center;
+width: 200px;
+justify-content: center;
+justify-items: center;
+}
+.imagem-personagens-mc{
+  position: relative;
+  width: 200px;
+  height: 270px;
+}
+.imagem-personagens, .imagem-personagens-mc, .imagem-acessorios {
+border-radius: 4px;
+box-shadow: 0 10px 20px rgba(134, 118, 118, 0.863);
+transition: transform 0.5s;
+}
+.texto-personagem-mc{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: white;
+
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.imagem-personagens{
+  position: relative;
+  width: 200px;
+  height: 270px;
+}
+.texto-personagem{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: white;
+  opacity: 0;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.andy:hover .texto-personagem, .miranda:hover .texto-personagem, .emily:hover .texto-personagem, .serena:hover .texto-personagem{ 
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.stanley:hover .texto-personagem-mc, .simon:hover .texto-personagem-mc, .adrian:hover .texto-personagem-mc, .daniel:hover .texto-personagem-mc{
+opacity: 1;
+}
+.texto{
+  position: absolute;
+  left:0;
+  background-color: rgba(228, 218, 218, 0.719);
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+
+  opacity: 0;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+.imagem-acessorios{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.bolsa, .oculos, .colar{
+  width: 200px;
+}
+.bolsa:hover .texto, .oculos:hover .texto, .colar:hover .texto{
+opacity: 1;
+height: 50%;
+}
+.imagem-sinopse img{
+  width: 450px;
+  height: 420px;
+  border-radius: 5px;
+}
+.sessao-sinopse{
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+.sinopse-texto{
+  padding: 0 10px;
+}
+.sobre{
+ background-color: var(--champagne);
+}
+.sinopse{
+  background-color: var(--champagne); 
+  color: var(--dark-gray)
+}
+.final{
+  background-color: black;
+  color: white;
+}
+.final footer{
+  padding: 40px 0;
+}
+.imagens-footer{
+  display: flex;
+  position: relative;
+  transform: translateY(-50px);
+  left: 89%;
+}
+.imagens-footer img{
+  width: 40px;
+  height: 40px;
+}
+#modal {
+ text-align: center;
+ justify-content: center;
+ border-radius: 5px;
+ border: none;
+ background-color: var(--champagne);
+}
+.minimizar button{
+  background-color: red;
+  position: relative;
+  top: -365px;
+  left: 50%;
+  border: none;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+@media(max-width:820px){
+  body,html{
+    overflow-x: hidden;
+  }
+.titulo-projeto{
+ display: flex;
+ align-items: center;
+ top: 0;
+ position: fixed;
+ width: 100%;
+ height: 60px;
+ z-index: 999;
+}
+.nome-projeto{
+  font-size: 15px;
+  text-align: center;
+  flex-grow: 1;
+}
+.imagem{
+    background-image: url('https://s2-gshow.glbimg.com/3t8AXK5CZOfZZitj1CiRo2r9hrs=/0x0:1440x1802/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2026/2/U/WKKg3TSUWWjfoEFuU5TA/omelete-2026-03-12t131724.000z.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  width: 350px;         
+  height: 200px;
+  }
+    .titulo h1 {
+  font-size: 15px;
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+}
+.cabeca{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    line-height: 36px;
+}
+.botao-saiba-mais button{
+width: 150px;
+background-color: var(--dark-gray);
+border: 1px solid var(--dark-gray);
+color: white;
+padding: 10px;
+border: none;
+font-size: 11px;
+}
+.sobre{
+ background-color: var(--champagne);
+ font-size: 12px;
+ text-justify: justify;
+}
+.sobre-imagem img{
+  width: 250px;
+  height: 150px;
+  padding: 40px;
+}
+.sobre-imagem{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 45px;
+}
+.card-acessorios{
+  display: flex;
+  overflow-x: auto;
+}
+.imagem-acessorios img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.card-personagens, 
+.card-personagens-masculino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 30px;
+    padding: 20px 0;
+    width: 100%;           
+    position: static;       
+    height: auto;           
+  }
+.card-personagens > div, 
+.card-personagens-masculino > div{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  }
+ .sessao-sinopse{
+  flex-direction: column-reverse;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+.imagem-sinopse img{
+  width: 250px;
+  height: 120px;
+  border-radius: 5px;
+}
+.sinopse-texto p{
+  font-size: 13px;
+  text-justify: justify;
+}
+.menu a{
+  text-decoration: none;
+  gap: 15px;
+  font-size: 13px;
+  display: flex;
+  color: white;
+}
+.titulo-footer {
+  font-size: 15px;
+}
+.direitos-footer{
+  font-size: 12px;
+}
+.imagens-footer{
+  display: flex;
+  position: relative;
+  transform: translateY(-50px);
+  left: 40%;
+  top: 35px;
+}
+.imagens-footer img{
+  width: 40px;
+  height: 40px;
+}
+#modal {
+ text-align: center;
+ justify-content: center;
+ border-radius: 5px;
+ border: none;
+ background-color: var(--champagne);
+}
+.minimizar button{
+  background-color: red;
+  position: relative;
+  top: -175px;
+  left: 50%;
+  border: none;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+iframe{
+  width: 250px;
+  height: 150px;
+}
+
+}
