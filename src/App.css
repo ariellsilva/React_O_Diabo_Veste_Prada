@@ -85,9 +85,7 @@ nav a{
     background-color: black;
     display: flex;
     color: white;
-    
 }
-
 .sessao-sobre h2, .sinopse-texto h2{
   color: #0c0c0c;
 }
@@ -357,7 +355,7 @@ height: 50%;
   }
     .titulo h1 {
   font-size: 15px;
-  color: var(--dark-gray);
+  color: white;
   margin-bottom: 10px;
 }
 .cabeca{
